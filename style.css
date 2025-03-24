@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    background-color: #000;
+    color:blue;
+    display: flex;
+    
+}
+
+header span{
+    display: flex;
+    margin-left:auto;
+}
+
+header li{
+    padding: 5px;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin:0;
+    text-align: center;
+}
+
+#hero{
+    height: 600px;
+    background-image:url(images/hands-typing.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1{
+    max-width: 60%;
+    color: white;
+    text-shadow: 2px 2px black;
+    
+}
