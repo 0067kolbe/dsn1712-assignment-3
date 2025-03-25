@@ -5,25 +5,28 @@
 header{
     display:flex;
     background-color: #000;
-    color:blue;
-    display: flex;
-    
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-header span{
-    display: flex;
-    margin-left:auto;
+a:link{
+    color:white;
+    text-decoration: none;
 }
 
-header li{
-    padding: 5px;
+a:visited{
+    color:white;
+    text-decoration: none;
 }
 
-.wrapper {
-    max-width: 940px;
-    margin:0;
-    text-align: center;
-}
+
+
+
+
+
+
+
 
 #hero{
     height: 600px;
@@ -31,11 +34,13 @@ header li{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 #hero h1{
     max-width: 60%;
     color: white;
     text-shadow: 2px 2px black;
+    background-color: black;
     
 }
