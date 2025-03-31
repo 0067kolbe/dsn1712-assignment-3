@@ -3,20 +3,38 @@
 }
 
 header{
-    display:flex;
     background-color: #000;
     color: white;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
     
-    flex-direction: column;
+}
+
+header div{
+    display: flex;
     justify-content: space-between;
 }
 
-a:link{
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 7px;
+}
+
+header span{
+ font-size: 1.5rem;
+}
+
+header a:link{
     color:white;
     text-decoration: none;
 }
 
-a:visited{
+header a:visited{
     color:white;
     text-decoration: none;
 }
@@ -25,12 +43,8 @@ a:visited{
 .wrapper{
     max-width: 940px;
     align-items: center;
+    margin: auto;
 }
-
-
-
-
-
 
 #hero{
     height: 600px;
@@ -39,6 +53,8 @@ a:visited{
     justify-content: center;
     align-items: center;
     background-size: cover;
+    filter: grayscale(100%);
+
 }
 
 #hero h1{
@@ -49,30 +65,91 @@ a:visited{
     background-color: black;
     justify-content: center;
     align-items: center;
+    opacity: 0.5;
 }
 
-#about-me p{
-    display: flex;
-    flex: 50%;
+#about-me .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 10px;
 }
 
-#services{
-    background-color: #fafafa;
+#about-me img{
+    grid-column: 3 / 4;
+    max-width: 100%;
+}
+
+#about-me .wrapper div {
+    grid-column: 1 / 3;
+}
 
 
+#services .wrapper{
+    display: grid;
+    background-color: white;
 }
 
 #services h2{
     text-align: center;
+    font-size: 2.5rem
 }
 
-#services{
+#services div{
     display: grid;
-    grid-template-columns: 150px 250px;
+    grid-column: 1fr 1fr 1fr;
 }
 
 #services article{
-    display:flex;
+    display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
+#work > div{
+    max-width: 100%;
+    text-align: center;
+}
+
+#work .wrapper div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "box1 box1 box1 box2 box2 box2"
+    "box3 box3 box4 box4 box5 box5";
+    margin-bottom: 65px;
+}                       
+
+#work img:nth-child(1){
+    display: grid;
+    grid-area: box1;
+    max-width: 100%;
+}          
+
+#work img:nth-child(2){
+    display: grid;
+    grid-area: box2;
+    max-width: 100%;
+}          
+
+#work img:nth-child(3){
+    display: grid;
+    grid-area: box3;
+    max-width: 100%;
+}          
+
+#work img:nth-child(4){
+    display: grid;
+    grid-area: box4;
+    max-width: 100%;
+}          
+
+#work img:nth-child(5){
+    display: grid;
+    grid-area: box5;
+    max-width: 100%;
+}          
+
+footer{
+    text-align: center;
+}
